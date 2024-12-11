@@ -1,5 +1,7 @@
+import os
 import requests
 import selectorlib
+import smtplib, ssl
 
 
 URL = "https://programmer100.pythonanywhere.com/tours"
@@ -19,6 +21,18 @@ def extract(source):
     return value
 
 def send_email():
+    host = "smtp.gmail.com"
+    port = 465
+
+    username = "smtp@example.com"
+    password = "here_goes_your_gmail_password"
+
+    receiver = "user@example.com"
+    context = ssl.create_default_context()
+
+    # with smtplib.SMTP_SSL(host, port, context=context) as server:
+    #     server.login(username, password)
+    #     server.sendmail(username, receiver, message)
     print("Email sent")
 
 def store(extracted):
