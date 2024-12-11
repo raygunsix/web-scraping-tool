@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Web Scraping Tool",
+            "database": "db.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
